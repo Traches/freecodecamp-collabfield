@@ -1,0 +1,60 @@
+// Basic Styling
+.grid-container {
+  padding: 1em;
+}
+
+.signup-link, .forgot-link {
+  text-align: center;
+  margin: 1em;
+}
+
+label {
+  margin-top: 1em;
+}
+
+.login-button {
+  margin: 1em 0;
+  color: white;
+  background-color: green;
+  &:hover {
+    background-color: DarkGreen;
+  }
+}
+
+// Media Queries
+
+@media(min-width: 700px) {
+  .grid-container {
+    display: grid;
+    max-width: 700px;
+    margin: 0 auto;
+    grid-template-areas: "login password"
+                         "button button"
+                         "signup-link forgot-link"
+  }
+
+  .login {
+    grid-area: login;
+    margin: 1em;
+  }
+
+  .password {
+    grid-area: password;
+    margin: 1em;
+  }
+
+  .login-button {
+    grid-area: button;
+  }
+
+  .signup-link {
+    grid-area: signup-link;
+  }
+
+  .forgot-link {
+    grid-area: forgot-link;
+  }
+  
+
+
+}
