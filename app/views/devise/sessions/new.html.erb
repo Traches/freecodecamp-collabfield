@@ -1,18 +1,23 @@
+<h1>Log In</h1>
 <%= form_for(resource,
   as: resource_name, 
   url: session_path(resource_name)) do |f| %>
 
   <div class="grid-container">
     <div class="login">
-      <%= f.label "Email:" %>
-      <%= f.email_field :email, 
-        autofocus: true,
-        placeholder: "email",
-        class: "form-control" %>
-      <% if devise_mapping.rememberable? -%>
-        <%= f.label :remember_me %>
-        <%= f.check_box :remember_me %>
-      <% end -%>
+      <p>
+        <%= f.label "Email:" %>
+        <%= f.email_field :email, 
+          autofocus: true,
+          placeholder: "email",
+          class: "form-field" %>
+      </p>
+      <p>
+        <% if devise_mapping.rememberable? -%>
+          <%= f.label :remember_me %>
+          <%= f.check_box :remember_me %>
+        <% end -%>
+      </p>
     </div>
 
     <div class="password">
@@ -20,12 +25,12 @@
       <%= f.label "Password:" %>
       <%= f.password_field :password, 
         autocomplete: "off",
-        class: 'form-control',
+        class: 'form-field',
         placeholder: 'password' %>
 
 
     </div>
-    <%= f.submit "Log in", class: 'form-control login-button' %>
+    <%= f.submit "Log in", class: 'button login-button' %>
     <div class="signup-link">
       <%= link_to 'Sign Up', '#'  %>
     </div>
