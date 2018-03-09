@@ -14,6 +14,7 @@
 
 .button-block {
   display: block;
+  width: 100%;
 }
 
 label {
@@ -29,7 +30,6 @@ label {
   border-radius: 2px;
   color: #282829;
   background: #f4f4f7;
-  margin-bottom: 1rem;
   display: block;
   width: 100%;
 }
@@ -40,4 +40,13 @@ main h1 {
   margin-bottom: 1.5rem;
   font-weight: 200;
   word-spacing: 6px;
+}
+
+main small {
+  font-size: .8rem;
+  margin: .3rem;
+}
+
+main .text-muted {
+  color: grey;
 }

@@ -1,0 +1,12 @@
+form div {
+  min-height: 7rem;
+}
+@media(min-width: 700px) {
+  .signup-container {
+    grid-gap: 0 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name password"
+                         "email password-conf"
+                         "button button"
+  }
+}

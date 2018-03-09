@@ -1,41 +1,22 @@
 // Basic Styling
+form div {
+  min-height: 7rem;
+}
 
 .signup-link, .forgot-link {
   text-align: center;
+  min-height: auto;
 }
 
 // Media Queries
 
 @media(min-width: 700px) {
-  .grid-container {
-    display: grid;
-    grid-gap: 2em 2em;
+  .login-container {
+    grid-gap: 0em 2em;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "login password"
+    grid-template-areas: "email password"
                          "button button"
                          "signup-link forgot-link"
   }
-
-  .login {
-    grid-area: login;
-  }
-
-  .password {
-    grid-area: password;
-  }
-
-  .login-button {
-    grid-area: button;
-  }
-
-  .signup-link {
-    grid-area: signup-link;
-  }
-
-  .forgot-link {
-    grid-area: forgot-link;
-  }
-  
-
 
 }

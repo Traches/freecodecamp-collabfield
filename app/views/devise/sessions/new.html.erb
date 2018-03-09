@@ -3,8 +3,8 @@
   as: resource_name, 
   url: session_path(resource_name)) do |f| %>
 
-  <div class="grid-container">
-    <div class="login">
+  <div class="login-container grid">
+    <div class="email">
       <p>
         <%= f.label "Email:" %>
         <%= f.email_field :email, 
@@ -30,7 +30,9 @@
 
 
     </div>
-    <%= f.submit "Log in", class: 'button login-button' %>
+    <div class="button-box">
+      <%= f.submit "Log in", class: 'button button-block login-button' %>
+    </div>
     <div class="signup-link">
       <%= link_to 'Sign Up', '#'  %>
     </div>
