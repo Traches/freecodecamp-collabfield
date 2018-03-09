@@ -16,10 +16,7 @@ main {
 
 @media(min-width: 700px){
   main {
-    display: grid;
     margin: 0 auto;
-    grid-gap: 2rem 2rem;
-    justify-content: center;
     max-width: 700px;
   }
 
