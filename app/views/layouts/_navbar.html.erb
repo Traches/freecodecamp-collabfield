@@ -3,7 +3,7 @@
     <!-- Dropdown menus: -->
     <% if user_signed_in? %>
       <div class="dropdown-menu float-right">
-        <button class="dropdown-button"><%= current_user.name %> V </button>
+        <button class="dropdown-button"><%= current_user.name %><i class="fas fa-chevron-down"></i></button>
         <div class="dropdown-content">
           <%= link_to "Edit Profile", edit_user_registration_path, class: 'dropdown-item'  %>
           <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'dropdown-item'  %>
