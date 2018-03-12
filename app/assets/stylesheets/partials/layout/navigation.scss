@@ -33,12 +33,14 @@ nav {
     overflow: hidden;
     background-color: $navbarColor;
     float: left;
+    min-width: 160px;
 
     .dropdown-button {
       border: none;
       outline: none;
       color: white;
       background-color: inherit;
+      float: right;
     }
 
     .dropdown-content {
@@ -46,7 +48,7 @@ nav {
       position: absolute;
       top: 2.5rem;
       background-color: white;
-      min-width: 200px;
+      min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
 
@@ -62,6 +64,10 @@ nav {
   }
   .dropdown-menu:hover .dropdown-content {
     display: block;
+  }
+
+  .float-right {
+    float: right;
   }
 }
 

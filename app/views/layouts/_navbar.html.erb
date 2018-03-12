@@ -2,7 +2,7 @@
     <%= link_to 'CollabField', root_path, class: 'navbar-brand' %>
     <!-- Dropdown menus: -->
     <% if user_signed_in? %>
-      <div class="dropdown-menu">
+      <div class="dropdown-menu float-right">
         <button class="dropdown-button"><%= current_user.name %> V </button>
         <div class="dropdown-content">
           <%= link_to "Edit Profile", edit_user_registration_path, class: 'dropdown-item'  %>
