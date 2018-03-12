@@ -7,17 +7,64 @@ nav {
   line-height: 2.5rem;
   padding: 0 1rem;
   margin-bottom: 2rem;
-  button, navbar-brand {
+  // overflow: hidden;
+
+  .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  button, a, navbar-brand {
     transition: opacity 0.15s;
+    color: white;
+    float: left;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 0 .5rem;
+    font-size: 1.0rem;
+    text-transform: capitalize;
   }
-  button {
-    margin-right: 0;
-  }
+
   button:hover, .navbar-brand:hover {
     opacity: 0.8;
   }
-  a {
-    color: white;
+
+  .dropdown-menu {
+    overflow: hidden;
+    background-color: $navbarColor;
+    float: left;
+
+    .dropdown-button {
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 2.5rem;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+
+      .dropdown-item{
+        float: none;
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+  }
+  .dropdown-menu:hover .dropdown-content {
+    display: block;
   }
 }
+
+
+
 

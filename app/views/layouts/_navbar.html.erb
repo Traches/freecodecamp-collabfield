@@ -1,6 +1,16 @@
 <nav>
-      <%= link_to 'collabfield', root_path, class: 'navbar-brand' %>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    <%= link_to 'CollabField', root_path, class: 'navbar-brand' %>
+    <!-- Dropdown menus: -->
+    <% if user_signed_in? %>
+      <div class="dropdown-menu">
+        <button class="dropdown-button"><%= current_user.name %> V </button>
+        <div class="dropdown-content">
+          <%= link_to "Edit Profile", edit_user_registration_path, class: 'dropdown-item'  %>
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'dropdown-item'  %>
+        </div>
+      </div>
+    <% else %>
+      <%= link_to "Log in", new_user_session_path %>
+      <%= link_to "Sign up", new_user_registration_path %>
+    <% end %>
 </nav>
