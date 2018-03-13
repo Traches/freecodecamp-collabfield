@@ -40,7 +40,10 @@ nav {
       outline: none;
       color: white;
       background-color: inherit;
-      float: right;
+      float: left;
+      .logged-in-button {
+        float: right;
+      }
     }
 
     .dropdown-content {

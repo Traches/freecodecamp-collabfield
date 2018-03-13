@@ -1,9 +1,19 @@
 <nav>
-    <%= link_to 'CollabField', root_path, class: 'navbar-brand' %>
-    <!-- Dropdown menus: -->
+  <%# Hamburger menu icon (for mobile) %> 
+  <a class="menu-toggle" id="main-menu-toggle">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <%# Navbar logo %>
+  <%= link_to 'CollabField', root_path, class: 'navbar-brand' %>
+
+  <%# Menu links%>
+  <a href="#" id="hamburger"><i class="fas fa-bars"></i>
+  <div class="main-menu" id="main-menu">
+    <a href="#">Navbar item 1</a>
     <% if user_signed_in? %>
       <div class="dropdown-menu float-right">
-        <button class="dropdown-button"><%= current_user.name %>
+        <button class="dropdown-button float-right"><%= current_user.name %>
         <i class="fas fa-chevron-down"></i></button>
         <div class="dropdown-content">
           <%= link_to "Edit Profile", edit_user_registration_path, class: 'dropdown-item'  %>
@@ -11,7 +21,10 @@
         </div>
       </div>
     <% else %>
-      <%= link_to "Log in", new_user_session_path %>
-      <%= link_to "Sign up", new_user_registration_path %>
+      <div class="float-right">
+        <%= link_to "Log in", new_user_session_path %>
+        <%= link_to "Sign up", new_user_registration_path %>
+      </div>
     <% end %>
+  </div>
 </nav>
