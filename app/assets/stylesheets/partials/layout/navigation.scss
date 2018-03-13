@@ -1,25 +1,29 @@
 nav {
-  position: relative;
+  // position: relative;
   background: $navbarColor;
   border: none;
   width: 100%;
-  height: 2.5rem;
+  // height: 2.5rem;
   line-height: 2.5rem;
   padding: 0 1rem;
   margin-bottom: 2rem;
   // overflow: hidden;
+
+  #hamburger {
+    float: left;
+  }
 
   .navbar-brand {
     font-size: 1.4rem;
     font-weight: bold;
   }
 
-  button, a, navbar-brand {
+  #hamburger, button, a, i, navbar-brand {
     transition: opacity 0.15s;
     color: white;
-    float: left;
+    // float: left;
     height: 2.5rem;
-    display: inline-block;
+    display: block;
     margin: 0 .5rem;
     font-size: 1.0rem;
     text-transform: capitalize;
@@ -72,8 +76,15 @@ nav {
   .float-right {
     float: right;
   }
+
 }
 
+@media (max-width: 700px) {
+  nav .mobile-hidden {
+    display: none;
+  }
+}
 
-
-
+@media (min-width: 700px) {
+  
+}

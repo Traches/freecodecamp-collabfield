@@ -1,16 +1,15 @@
 <nav>
   <%# Hamburger menu icon (for mobile) %> 
-  <a class="menu-toggle" id="main-menu-toggle">
-    <i class="fa fa-bars"></i>
-  </a>
-
+  <div id="hamburger"><i class="fas fa-bars"></i></div>
   <%# Navbar logo %>
   <%= link_to 'CollabField', root_path, class: 'navbar-brand' %>
 
   <%# Menu links%>
-  <a href="#" id="hamburger"><i class="fas fa-bars"></i>
-  <div class="main-menu" id="main-menu">
+  <div class="mobile-hidden" id="main-menu">
     <a href="#">Navbar item 1</a>
+    <a href="#">Navbar item 2</a>
+    <a href="#">Navbar item 3</a>
+    <a href="#">Navbar item 4</a>
     <% if user_signed_in? %>
       <div class="dropdown-menu float-right">
         <button class="dropdown-button float-right"><%= current_user.name %>
