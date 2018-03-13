@@ -1,73 +1,81 @@
-.button {
-  border: 1px #333 solid;
-  border-radius: 3px;
-  height: 2.5rem;
-  color: white;
-  background-color: green;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  &:hover {
-    background-color: DarkGreen;
+html {
+  .button {
+    border: 1px #333 solid;
+    border-radius: 3px;
+    height: 2.5rem;
+    color: white;
+    background-color: green;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: DarkGreen;
+    }
   }
-}
 
-.button-block {
-  display: block;
-  width: 100%;
-}
+  .button-block {
+    display: block;
+    width: 100%;
+  }
 
-label {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: #282829;
-}
+  label {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #282829;
+  }
 
-.form-field {
-  font-size: 1.2rem;
-  padding: 0.4rem;
-  border: 1px solid grey;
-  border-radius: 3px;
-  color: #282829;
-  background: #f4f4f7;
-  display: block;
-  width: 100%;
-}
+  .form-field {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: #282829;
+    background: #f4f4f7;
+    display: block;
+    width: 100%;
+  }
 
-main h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-weight: 200;
-  word-spacing: 6px;
-}
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+    word-spacing: 6px;
+  }
 
-main h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 1rem;
-  font-weight: 200;
-  word-spacing: 4px;
-}
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    font-weight: 200;
+    word-spacing: 4px;
+  }
 
-main h3 {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: .75rem;
-  font-weight: 200;
-  word-spacing: 2px;
-}
+  h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: .75rem;
+    font-weight: 200;
+    word-spacing: 2px;
+  }
 
-main h4 {
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 700;
-}
+  h4 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+  }
 
-main small {
-  font-size: .8rem;
-  margin: .3rem;
-}
+  small {
+    font-size: .8rem;
+    margin: .3rem;
+  }
 
-main .text-muted {
-  color: grey;
+  .text-muted {
+    color: grey;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
 }

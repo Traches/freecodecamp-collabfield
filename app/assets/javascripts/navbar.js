@@ -5,4 +5,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
     menu.classList.toggle("mobile-hidden");
   })
 
+  let dropdownButton = document.getElementById("dropdown-button");
+  dropdownButton.addEventListener("click", function() {
+    let dropdownContent = document.getElementById("dropdown-content");
+    dropdownContent.classList.toggle("hidden");
+  })
+ 
 });

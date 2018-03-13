@@ -1,6 +1,7 @@
 <nav>
   <%# Hamburger menu icon (for mobile) %> 
   <div id="hamburger"><i class="fas fa-bars"></i></div>
+
   <%# Navbar logo %>
   <%= link_to 'CollabField', root_path, class: 'navbar-brand' %>
 
@@ -11,19 +12,17 @@
     <a href="#">Navbar item 3</a>
     <a href="#">Navbar item 4</a>
     <% if user_signed_in? %>
-      <div class="dropdown-menu float-right">
-        <button class="dropdown-button float-right"><%= current_user.name %>
+      <div id="dropdown-menu">
+        <button id="dropdown-button"><%= current_user.name %>
         <i class="fas fa-chevron-down"></i></button>
-        <div class="dropdown-content">
+        <div id="dropdown-content" class="hidden">
           <%= link_to "Edit Profile", edit_user_registration_path, class: 'dropdown-item'  %>
           <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'dropdown-item'  %>
         </div>
       </div>
     <% else %>
-      <div class="float-right">
-        <%= link_to "Log in", new_user_session_path %>
-        <%= link_to "Sign up", new_user_registration_path %>
-      </div>
+      <%= link_to "Log in", new_user_session_path %>
+      <%= link_to "Sign up", new_user_registration_path %>
     <% end %>
   </div>
 </nav>
