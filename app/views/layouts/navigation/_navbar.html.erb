@@ -21,13 +21,8 @@
         </div>
       </div>
     <% else %>
-        <button id="dropdown-button"> Not Signed In
-        <i class="fas fa-chevron-down"></i></button>
-        <div id="dropdown-content" class="hidden">
-      <%= link_to "Log in", new_user_session_path, class: 'dropdown-item' %>
-      <%= link_to "Sign up", new_user_registration_path, class: 'dropdown-item' %>
-        </div>
-      </div>
+      <%= link_to "Log in", new_user_session_path %>
+      <%= link_to "Sign up", new_user_registration_path %>
     <% end %>
   </div>
 </nav>
