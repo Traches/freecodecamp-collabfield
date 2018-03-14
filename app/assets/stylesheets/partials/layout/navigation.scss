@@ -68,12 +68,22 @@ nav {
 @media (min-width: 700px) {
 
   nav {
+    display: flex;
+
     #dropdown-button, #main-menu, button, a, i, .navbar-brand, {
       display: inline-block;
+    }
+    
+    #main-menu {
+      width: 100%;
     }
 
     #hamburger {
       display: none;
+    }
+
+    #dropdown-menu {
+      float: right;
     }
   }
   
