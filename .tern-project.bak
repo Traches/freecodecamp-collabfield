@@ -1,9 +1,0 @@
-//.tern-project.js
-{ 
-  "libs": [ "browser", "jquery" ], 
-  "loadEagerly": [ 
-    "./app/assets/javascripts/*.js",
-    "./app/assets/javascripts/*/*.js",
-    "./vendor/assets/javascripts/*.js",
-  "dontLoad": ["public/assets"]
-}
