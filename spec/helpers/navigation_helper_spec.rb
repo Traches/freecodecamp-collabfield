@@ -15,6 +15,7 @@ RSpec.describe NavigationHelper, type: :helper do
         )
       end
     end
+
   end
 
   context 'non-signed in user' do
@@ -30,6 +31,7 @@ RSpec.describe NavigationHelper, type: :helper do
         )
       end
     end
+
   end
 
 end
